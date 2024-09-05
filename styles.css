@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Dancing+Script:wght@400..700&display=swap');
+
+
+/* Set default body styling */
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2b394d; /* Optional: background color, can be removed or customized */
+    font-family: Arial, sans-serif; /* Ensure consistent font styling */
+}
+
+/* Content container styling */
+.content {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Image styling */
+.corner-image {
+    position: absolute;
+    width: 350px; /* Adjust size as needed */
+    height: auto;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+/* Invitation text styling */
+.invitation {
+    text-align: center;
+    color: white; /* Ensure text is visible against the background */
+    padding: 40px;
+    max-width: 500px;
+    /* Removed background color and box shadow */
+}
+
+.invitation input[type="text"],
+.invitation input[type="email"],
+.invitation input[type="number"] {
+    width: 90%; /* Increase the width of the input fields */
+    padding: 10px; /* Add padding inside the input fields */
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+    border-radius: 5px; /* Optional: Add rounded corners to input fields */
+}
+
+/* Text styling */
+.invitation p {
+    margin: 10px 0;
+}
+
+/* Spacer for additional space between lines */
+.spacer {
+    margin: 20px 0;
+}
+
+/* Button styling */
+.rsvp-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 30px; /* Space above button */
+    margin-bottom: 30px;
+    background-color: #fffffa;
+    z-index: 9999;
+    position: relative;
+}
+
+.rsvp-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 375px) {
+    .corner-image {
+        width: 80px; /* Adjust size for smaller screens */
+    }
+    
+    .invitation p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .rsvp-button {
+        padding: 8px 16px; /* Adjust button size for smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+/* FONTTTTTTT */
+.dancing-script-regular {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #dbd293;
+    font-size: 30px;
+}
+
+.alegreya-regular {
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #dbd293;
+}
+
+.margin-tobot-2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.margin-20 {
+    margin-bottom: 20px;
+}
+
+.black-color {
+    color: black;
+}
+
+.z-in-top {
+    z-index: 9999;
+}
+
+
+
+/* SLIDE IN LEFT EFFECTTTT */
+.slide-in-left {
+    transform: translateX(-100%);
+    animation: slideInLeft 1s forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* SLIDE IN RIGHTT EFFECTTTT */
+.slide-in-right {
+    transform: translateX(100%);
+    animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* FLIP IN HORIZONTAL EFFECTTTT */
+.flip-in-horizontal {
+    transform: perspective(400px) rotateY(-90deg);
+    opacity: 0;
+    animation: flipInHorizontal 1s forwards;
+}
+
+@keyframes flipInHorizontal {
+    from {
+        transform: perspective(400px) rotateY(-90deg);
+        opacity: 0;
+    }
+    to {
+        transform: perspective(400px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+/* ZOOM IN OUT EFFECTTTT */
+.zoom-effect {
+    animation: zoomInOut 8s infinite;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1); /* Scale up */
+        opacity: 0.8; /* Slightly faded */
+    }
+    100% {
+        transform: scale(1); /* Scale back to original */
+        opacity: 1;
+    }
+}
+
+/* SLIDE OUT LEFTTT */
+.slide-out-left {
+    animation: slideOutLeft 0.5s forwards ease;
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+/* SLIDE OUT RIGHTTTT */
+.slide-out-right {
+    animation: slideOutRight 1s forwards ease;
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}

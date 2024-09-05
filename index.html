@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majlis Perkahwinan Fikri dan Syahirah</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="content">
+        <img src="assets/2.png" alt="Top Left" class="corner-image top-left zoom-effect">
+        <img src="assets/3.png" alt="Top Right" class="corner-image top-right zoom-effect">
+        <img src="assets/4.png" alt="Bottom Left" class="corner-image bottom-left zoom-effect">
+        <img src="assets/5.png" alt="Bottom Right" class="corner-image bottom-right zoom-effect">
+
+        <div class="invitation" id="invitation">
+            <p class="alegreya-regular slide-in-left">Majlis Perkahwinan</p>
+            <p class="dancing-script-regular flip-in-horizontal">Fikri</p>
+            <p class="dancing-script-regular flip-in-horizontal">&</p>
+            <p class="dancing-script-regular flip-in-horizontal">Syahirah</p>
+            <button class="rsvp-button alegreya-regular black-color" onclick="slideOutContent()">RSVP</button>
+            <p class="spacer alegreya-regular slide-in-left">Jemputan ke majlis perkahwinan kami</p>
+            <p class="alegreya-regular slide-in-right">Thursday, 12 December 2024</p>
+            <p class="alegreya-regular slide-in-left">Bizmilla Catering</p>
+        </div>
+    </div>
+
+    <script>
+        function slideOutContent() {
+            const invitation = document.getElementById('invitation');
+            const elements = invitation.getElementsByTagName('p');
+
+            for (let i = 0; i < elements.length; i++) {
+                const element = elements[i];
+
+                if (element.classList.contains('slide-in-left')) {
+                    element.classList.remove('slide-in-left');
+                    element.classList.add('slide-out-right');
+                } else if (element.classList.contains('slide-in-right')) {
+                    element.classList.remove('slide-in-right');
+                    element.classList.add('slide-out-left');
+                }
+            }
+
+            setTimeout(() => {
+                window.location.href = "form.html";
+            });
+        }
+
+
+    </script>
+
+</body>
+
+</html>
