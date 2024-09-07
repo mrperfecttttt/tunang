@@ -12,6 +12,8 @@ body {
     /* Optional: background color, can be removed or customized */
     font-family: Arial, sans-serif;
     /* Ensure consistent font styling */
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* Content container styling */
