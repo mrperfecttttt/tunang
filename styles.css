@@ -8,15 +8,19 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #2b394d; /* Optional: background color, can be removed or customized */
-    font-family: Arial, sans-serif; /* Ensure consistent font styling */
+    background-color: #2b394d;
+    /* Optional: background color, can be removed or customized */
+    font-family: Arial, sans-serif;
+    /* Ensure consistent font styling */
 }
 
 /* Content container styling */
 .content {
     position: relative;
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
+    width: 100vw;
+    /* Full viewport width */
+    height: 100vh;
+    /* Full viewport height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +30,8 @@ body {
 /* Image styling */
 .corner-image {
     position: absolute;
-    width: 350px; /* Adjust size as needed */
+    width: 350px;
+    /* Adjust size as needed */
     height: auto;
 }
 
@@ -53,7 +58,8 @@ body {
 /* Invitation text styling */
 .invitation {
     text-align: center;
-    color: white; /* Ensure text is visible against the background */
+    color: white;
+    /* Ensure text is visible against the background */
     padding: 40px;
     max-width: 500px;
     /* Removed background color and box shadow */
@@ -62,10 +68,14 @@ body {
 .invitation input[type="text"],
 .invitation input[type="email"],
 .invitation input[type="number"] {
-    width: 90%; /* Increase the width of the input fields */
-    padding: 10px; /* Add padding inside the input fields */
-    box-sizing: border-box; /* Ensure padding doesn't affect the width */
-    border-radius: 5px; /* Optional: Add rounded corners to input fields */
+    width: 90%;
+    /* Increase the width of the input fields */
+    padding: 10px;
+    /* Add padding inside the input fields */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect the width */
+    border-radius: 5px;
+    /* Optional: Add rounded corners to input fields */
 }
 
 /* Text styling */
@@ -86,7 +96,8 @@ body {
     color: white;
     font-size: 14px;
     cursor: pointer;
-    margin-top: 30px; /* Space above button */
+    margin-top: 30px;
+    /* Space above button */
     margin-bottom: 30px;
     background-color: #fffffa;
     z-index: 9999;
@@ -97,18 +108,31 @@ body {
     background-color: #f0f0f0;
 }
 
+.transparent-image {
+    pointer-events: none;
+}
+
+
+
+
+
+
+
 /* Responsive adjustments */
 @media screen and (max-width: 375px) {
     .corner-image {
-        width: 80px; /* Adjust size for smaller screens */
+        width: 80px;
+        /* Adjust size for smaller screens */
     }
-    
+
     .invitation p {
-        font-size: 1em; /* Adjust font size for smaller screens */
+        font-size: 1em;
+        /* Adjust font size for smaller screens */
     }
 
     .rsvp-button {
-        padding: 8px 16px; /* Adjust button size for smaller screens */
+        padding: 8px 16px;
+        /* Adjust button size for smaller screens */
         margin-bottom: 20px;
     }
 }
@@ -166,6 +190,7 @@ body {
     from {
         transform: translateX(-100%);
     }
+
     to {
         transform: translateX(0);
     }
@@ -181,6 +206,7 @@ body {
     from {
         transform: translateX(100%);
     }
+
     to {
         transform: translateX(0);
     }
@@ -198,6 +224,7 @@ body {
         transform: perspective(400px) rotateY(-90deg);
         opacity: 0;
     }
+
     to {
         transform: perspective(400px) rotateY(0deg);
         opacity: 1;
@@ -214,12 +241,17 @@ body {
         transform: scale(1);
         opacity: 1;
     }
+
     50% {
-        transform: scale(1.1); /* Scale up */
-        opacity: 0.8; /* Slightly faded */
+        transform: scale(1.1);
+        /* Scale up */
+        opacity: 0.8;
+        /* Slightly faded */
     }
+
     100% {
-        transform: scale(1); /* Scale back to original */
+        transform: scale(1);
+        /* Scale back to original */
         opacity: 1;
     }
 }
@@ -234,6 +266,7 @@ body {
         transform: translateX(0);
         opacity: 1;
     }
+
     to {
         transform: translateX(-100%);
         opacity: 0;
@@ -250,6 +283,7 @@ body {
         transform: translateX(0);
         opacity: 1;
     }
+
     to {
         transform: translateX(100%);
         opacity: 0;
