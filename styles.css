@@ -12,6 +12,9 @@ body {
     /* Optional: background color, can be removed or customized */
     font-family: Arial, sans-serif;
     /* Ensure consistent font styling */
+}
+
+body, html {
     overflow-x: hidden;
     overflow-y: hidden;
 }
