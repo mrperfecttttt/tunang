@@ -24,11 +24,11 @@
                     class="margin-20 alegreya-regular slide-in-right black-color" required>
 
                 <div class="alegreya-regular slide-in-left">Will you be able to attend?</div>
-                <input class="margin-tobot-2" type="radio" id="attendYes" name="attendance" value="yes"
+                <input class="z-in-top margin-tobot-2" type="radio" id="attendYes" name="attendance" value="yes"
                     onclick="toggleAdditionalFields(true)" required>
-                <label for="attendYes" class="z-in-top alegreya-regular slide-in-left">Yes</label><br>
-                <input type="radio" id="attendNo" name="attendance" value="no" onclick="toggleAdditionalFields(false)">
-                <label for="attendNo" class="z-in-top alegreya-regular slide-in-left">No</label><br>
+                <label for="attendYes" class="alegreya-regular slide-in-left">Yes</label><br>
+                <input class="z-in-top" type="radio" id="attendNo" name="attendance" value="no" onclick="toggleAdditionalFields(false)">
+                <label for="attendNo" class="alegreya-regular slide-in-left">No</label><br>
 
                 <div id="additionalFields" style="display:none;">
                     <br><input type="email" id="email" name="email" placeholder="Email Address"
