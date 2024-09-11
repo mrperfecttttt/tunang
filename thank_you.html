@@ -19,17 +19,16 @@
             <p class="alegreya-regular slide-in-left">Thank you for your RSVP!</p>
             <p class="alegreya-regular slide-in-right">We have received your response.</p>
 
-            <!-- Add Calendar Button -->
-            <form method="post" action="generate_calendar.php">
-                <input type="hidden" name="name" value="<?php echo htmlspecialchars($_POST['nama']); ?>">
-                <input type="hidden" name="email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-                <input type="hidden" name="attendance" value="<?php echo htmlspecialchars($_POST['attendance']); ?>">
-                <input type="hidden" name="pax" value="<?php echo htmlspecialchars($_POST['pax']); ?>">
+            <p class="alegreya-regular slide-in-left">Would you like to add the event to your calendar?</p>
 
-                <button type="submit" class="rsvp-button alegreya-regular black-color">
-                    Add to Calendar
-                </button>
-            </form>
+            <!-- Calendar options -->
+            <div class="calendar-options">
+                <!-- Link for Google Calendar -->
+                <a href="<?php echo generateGoogleCalendarUrl(); ?>" class="rsvp-button alegreya-regular black-color" target="_blank">Add to Google Calendar</a>
+
+                <!-- Link for downloading Apple Calendar (ICS) file -->
+                <a href="generate_calendar.php" class="rsvp-button alegreya-regular black-color">Download ICS (Apple Calendar)</a>
+            </div>
         </div>
     </div>
 </body>
