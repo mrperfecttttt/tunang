@@ -1,8 +1,8 @@
 <?php
 // Function to generate Google Calendar URL
 function generateGoogleCalendarUrl() {
-    $eventStart = '20240501T100000Z';  // Replace with your event start time in UTC (Ymd\THis\Z)
-    $eventEnd = '20240501T140000Z';    // Replace with your event end time in UTC (Ymd\THis\Z)
+    $eventStart = '20250404T030000Z';  // Replace with your event start time in UTC (Ymd\THis\Z)
+    $eventEnd = '20250404T060000Z';    // Replace with your event end time in UTC (Ymd\THis\Z)
     $eventName = urlencode("Majlis Perkahwinan Fikri & Syahirah");
     $eventDescription = urlencode("You're invited to the wedding event of Fikri & Syahirah!");
     $eventLocation = urlencode("Wedding Venue, Kuala Lumpur, Malaysia");
