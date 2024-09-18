@@ -16,4 +16,8 @@ function generateGoogleCalendarUrl() {
 
     return $googleCalendarUrl;
 }
+
+// Redirect to Google Calendar URL
+header("Location: " . generateGoogleCalendarUrl());
+exit;
 ?>
