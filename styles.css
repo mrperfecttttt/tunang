@@ -126,8 +126,8 @@ body, html {
 /* Responsive adjustments */
 @media screen and (max-width: 375px) {
     .corner-image {
-        width: 80px;
-        /* Adjust size for smaller screens */
+        width: 80%; /* Adjusts width to 90% of the screen width */
+        max-width: 350px; /* Ensures it doesn’t exceed 350px */
     }
 
     .invitation p {
@@ -139,6 +139,13 @@ body, html {
         padding: 8px 16px;
         /* Adjust button size for smaller screens */
         margin-bottom: 20px;
+    }
+}
+
+/* Adjust font size for screens smaller than 320px */
+@media screen and (max-width: 320px) {
+    .invitation p {
+        font-size: 0.8em; /* Smaller font for very small screens */
     }
 }
 
